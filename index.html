@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="index.js"></script>
+    <link rel="stylesheet" href="style.css" />
+    <title>Form Validation</title>
+  </head>
+  <body>
+    <div id="login-container">
+      <form
+        class="gform"
+        name="myform"
+        method="post"
+        action="./Home.html"
+        onsubmit="validateform()"
+      >
+        <h1 class="heading">Log In Here</h1>
+        <div class="input">
+          <label for="">Name</label> <input type="text" name="name" />
+        </div>
+        <div class="input">
+          <label for=""> Password</label>
+          <input type="password" name="password" /><br />
+        </div>
+        <div class="input">
+          <label for="">Re-enter Password</label
+          ><input type="password" name="password2" /><br />
+        </div>
+
+        <input type="submit" value="register" />
+      </form>
+    </div>
+  </body>
+</html>
